@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .carousel img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .carousel .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .carousel-caption {
+        z-index: 2;
+      }
+      section#About {
+        background-color: #440d0f;
+        color: white;
+      }
+      section#Services {
+        background-color: #603a40;
+        padding-top: 2rem;
+      }
+      section#Services h3 {
+        color: white;
+        padding-bottom: 2rem;
+      }
+      section#Services img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      section#contact {
+        padding: 2rem;
+        background-color: #84596B;
+      }
+      #contact .card {
+        max-width: 500px;
+        margin: auto;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="logo-removebg-preview.png" height="100px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Lose Weight</a></li>
+                <li><a class="dropdown-item" href="#">Gain Weight</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <button class="btn btn-outline-secondary">Login</button>
+            <button class="btn btn-secondary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <img src="./fat lose.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fat Lose</h5>
+                <p>
+                  "Stay fit, stay strong! Your body will thank you for the love
+                  and care you give it."
+                </p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="./gain weight.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Muscle Gain</h5>
+                <p>
+                  "Take it one step at a time, one pound at a time. You've got
+                  this! Stay focused and keep moving forward towards your
+                  goals."
+                </p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="./lifestyle.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lifestyle</h5>
+                <p>
+                  "Embrace the journey of growth, both inside and out. Every
+                  rep, every meal, takes you closer to your stronger, healthier
+                  self. Keep pushing, keep gaining!"
+                </p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="About" class="p-4">
+        <h2 class="text-center">About</h2>
+        <h3 class="text-center">I am "Coach Terence"</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>
+                For over a decade, I've been passionately immersed in the world
+                of fitness, driven by a profound enthusiasm for health and
+                well-being. As a freelance trainer, I've had the privilege of
+                guiding countless individuals on their transformative journeys,
+                helping them sculpt their bodies and elevate their lives.
+              </p>
+              <p class="mb-4 mb-md-0">
+                Every session is not just about physical exercise; it's a
+                holistic experience aimed at nurturing both body and mind. With
+                each passing year, my dedication to this craft only grows
+                stronger, fueled by the profound impact it has on those I have
+                the honor to work with.
+              </p>
+            </div>
+            <div class="col">
+              <img src="./posin.jpg" height="500px" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="Services">
+      <div class="container">
+        <h3 class="text-center">Services</h3>
+        <div class="row">
+          <div class="col-12 col-4">
+            <div class="card">
+              <img src="./fat lose.PNG" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Fatlose</h5>
+                <p class="card-text">
+                  Introducing a comprehensive fat loss workout program designed
+                  to help you shed those extra pounds and sculpt a leaner,
+                  stronger body. This program combines high-intensity interval
+                  training (HIIT), strength training, and cardiovascular
+                  exercises to maximize calorie burn and boost metabolism. From
+                  dynamic bodyweight exercises to targeted resistance training,
+                  each workout is tailored to accelerate fat loss and enhance
+                  overall fitness. With step-by-step instructions and expert
+                  guidance, you'll be empowered to push your limits and achieve
+                  results. Say goodbye to excess fat and hello to a healthier,
+                  more vibrant you. Get ready to sweat, burn, and transform your
+                  body with our fat loss workout program!
+                </p>
+                <a href="#" class="btn btn-primary">Click Me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-4">
+            <div class="card">
+              <img src="gain weight.PNG" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Muscle Gain</h5>
+                <p class="card-text">
+                  Introducing a dynamic muscle gain workout program meticulously
+                  crafted to help you pack on lean muscle mass and sculpt a
+                  powerful physique. This program is built on a foundation of
+                  progressive resistance training, targeting major muscle groups
+                  with compound exercises and isolation movements to stimulate
+                  growth and strength. Whether you're a beginner or a seasoned
+                  lifter, each workout is carefully structured to optimize
+                  muscle hypertrophy and enhance muscular endurance. With a
+                  combination of heavy lifting, proper form, and strategic rest
+                  intervals, you'll ignite muscle growth and unlock your full
+                  potential. From bench presses to squats, deadlifts to
+                  pull-ups, our muscle gain workout program offers a
+                  comprehensive approach to building a strong, resilient body.
+                  Get ready to challenge yourself, push your limits, and achieve
+                  your muscle-building goals like never before!
+                </p>
+                <a href="#" class="btn btn-primary">Click Me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-4">
+            <div class="card">
+              <img src="lifestyle.PNG" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">LifeStyle</h5>
+                <p class="card-text">
+                  Introducing our lifestyle workout program, designed to
+                  seamlessly integrate fitness into your daily routine,
+                  fostering long-term health and vitality. This program
+                  emphasizes functional movements, mobility exercises, and
+                  mindful practices to enhance overall well-being and
+                  resilience. From brisk walks to yoga sessions, bodyweight
+                  exercises to meditation, each workout is tailored to fit
+                  effortlessly into your busy schedule, making fitness a natural
+                  and enjoyable part of your lifestyle. Whether you're at home,
+                  at work, or on the go, our flexible approach empowers you to
+                  prioritize self-care and stay active wherever life takes you.
+                  Embrace the joy of movement, cultivate balance, and unlock the
+                  full potential of your body and mind with our lifestyle
+                  workout program. It's time to live well, move well, and thrive
+                  in every aspect of your life!
+                </p>
+                <a href="#" class="btn btn-primary">Click Me!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+     <h3 class="text-center">Contact</h3>
+     <p class="text-center">Let's get started!</p>
+     <div class="card">
+      <div class="card-body">
+        <form>
+          <div class="form-floating mb-3">
+            <input type="fname" class="form-control" id="First Name">
+            <label for="floatingInput">First Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="lname" class="form-control" id="Last Name">
+            <label for="floatingPassword">Last Name</label><br>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="Email" class="form-control" id="Email Address">
+            <label for="floatingInput">Email Address</label>
+          </div>
+          <button class="btn btn-primary w-100">Send</button>
+         </form>
+      </div>
+     </div>
+     
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

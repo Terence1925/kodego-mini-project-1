@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -11,9 +15,13 @@
       crossorigin="anonymous"
     />
     <style>
+      
       .carousel img {
         height: 100%;
         object-fit: cover;
+      }
+      .carousel-item {
+        height: 500px;
       }
 
       .carousel .overlay {
@@ -28,11 +36,16 @@
         z-index: 2;
       }
       section#About {
-        background-color: #440d0f;
+        background-color:#192BC2;
         color: white;
       }
+      
+      section#About img {
+        clip-path: circle();
+        height: 350px;
+      }
+     
       section#Services {
-        background-color: #603a40;
         padding-top: 2rem;
       }
       section#Services h3 {
@@ -43,23 +56,34 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        height: 200px;
       }
       section#contact {
         padding: 2rem;
-        background-color: #84596B;
+        background-color:#9B9B93;
       }
       #contact .card {
         max-width: 500px;
         margin: auto;
       }
-      
+
+      h3.text-center {
+        color: white;
+      }
+      p.text-center {
+        color: white;
+      }
+      img {
+        display: block;
+        margin: auto;
+      } 
       
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="./index.html"
           ><img src="logo-removebg-preview.png" height="100px" alt=""
         /></a>
         <button
@@ -79,10 +103,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -95,14 +119,17 @@
                 Services
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Lose Weight</a></li>
-                <li><a class="dropdown-item" href="#">Gain Weight</a></li>
+                <li><a class="dropdown-item" href="#Services">Fat Lose</a></li>
+                <li><a class="dropdown-item" href="#Services">Muscle Gain</a></li>
+                <li><a class="dropdown-item" href="#Services">Life Style</a></li>
               </ul>
             </li>
           </ul>
           <div>
-            <button class="btn btn-outline-secondary">Login</button>
-            <button class="btn btn-secondary">Sign Up</button>
+            <a href="./login..html">
+            <button  class="btn btn-outline-secondary">Login</button></a>
+            <a href="./signup.html">
+            <button class="btn btn-secondary">Sign Up</button></a>
           </div>
         </div>
       </div>
@@ -159,7 +186,7 @@
             <div class="carousel-item position-relative">
               <img src="./lifestyle.PNG" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Lifestyle</h5>
+                <h5>Life <Script></Script>tyle</h5>
                 <p>
                   "Embrace the journey of growth, both inside and out. Every
                   rep, every meal, takes you closer to your stronger, healthier
@@ -189,20 +216,20 @@
           </button>
         </div>
       </section>
-      <section id="About" class="p-4">
-        <h2 class="text-center">About</h2>
-        <h3 class="text-center">I am "Coach Terence"</h3>
+      <section id="About" class="pb-5 pt-4">
+        <h2 class="text-center display-3">About</h2>
+        <h2 class="text-center pt-3 pb-5">I am "Coach Terence"</h2>
         <div class="container">
           <div class="row">
             <div class="col">
-              <p>
+              <p class="ps-5 pb-3 pe-5 fs-5 ">
                 For over a decade, I've been passionately immersed in the world
                 of fitness, driven by a profound enthusiasm for health and
                 well-being. As a freelance trainer, I've had the privilege of
                 guiding countless individuals on their transformative journeys,
-                helping them sculpt their bodies and elevate their lives.
+                helping sculpt their bodies and elevate their lives.
               </p>
-              <p class="mb-4 mb-md-0">
+              <p class="ps-5 pe-5 mb-4 mb-md-0 fs-5 ">
                 Every session is not just about physical exercise; it's a
                 holistic experience aimed at nurturing both body and mind. With
                 each passing year, my dedication to this craft only grows
@@ -211,88 +238,49 @@
               </p>
             </div>
             <div class="col">
-              <img src="./posin.jpg" height="500px" alt="" />
+              <img class="bg-light" src="mypicture-removebg-preview.png" height="500px"alt="" />
             </div>
           </div>
         </div>
       </section>
     </main>
-    <section id="Services">
+    <section id="Services" class="pb-5">
       <div class="container">
-        <h3 class="text-center">Services</h3>
+        <h3 class="text-center text-secondary display-3">Services</h3>
         <div class="row">
-          <div class="col-12 col-4">
+          <div class="col-sm-4">
             <div class="card">
               <img src="./fat lose.PNG" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Fatlose</h5>
-                <p class="card-text">
-                  Introducing a comprehensive fat loss workout program designed
-                  to help you shed those extra pounds and sculpt a leaner,
-                  stronger body. This program combines high-intensity interval
-                  training (HIIT), strength training, and cardiovascular
-                  exercises to maximize calorie burn and boost metabolism. From
-                  dynamic bodyweight exercises to targeted resistance training,
-                  each workout is tailored to accelerate fat loss and enhance
-                  overall fitness. With step-by-step instructions and expert
-                  guidance, you'll be empowered to push your limits and achieve
-                  results. Say goodbye to excess fat and hello to a healthier,
-                  more vibrant you. Get ready to sweat, burn, and transform your
-                  body with our fat loss workout program!
+                <h5 class="card-title">Fat Lose</h5>
+                <p class="card-text ">
+                  Designed to help you shed unwanted pounds and inches with ease. Say goodbye to stubborn fat and hello to a healthier, happier you!
                 </p>
-                <a href="#" class="btn btn-primary">Click Me!</a>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-4">
+          <div class="col-sm-4">
             <div class="card">
               <img src="gain weight.PNG" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Muscle Gain</h5>
                 <p class="card-text">
-                  Introducing a dynamic muscle gain workout program meticulously
-                  crafted to help you pack on lean muscle mass and sculpt a
-                  powerful physique. This program is built on a foundation of
-                  progressive resistance training, targeting major muscle groups
-                  with compound exercises and isolation movements to stimulate
-                  growth and strength. Whether you're a beginner or a seasoned
-                  lifter, each workout is carefully structured to optimize
-                  muscle hypertrophy and enhance muscular endurance. With a
-                  combination of heavy lifting, proper form, and strategic rest
-                  intervals, you'll ignite muscle growth and unlock your full
-                  potential. From bench presses to squats, deadlifts to
-                  pull-ups, our muscle gain workout program offers a
-                  comprehensive approach to building a strong, resilient body.
-                  Get ready to challenge yourself, push your limits, and achieve
-                  your muscle-building goals like never before!
+                  Tailored to help you pack on lean muscle mass and achieve the sculpted physique you've always desired. Elevate your performance and transform your body into a powerhouse with MuscleGain!
                 </p>
-                <a href="#" class="btn btn-primary">Click Me!</a>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-4">
+          <div class="col-sm-4">
             <div class="card">
               <img src="lifestyle.PNG" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">LifeStyle</h5>
+                <h5 class="card-title">Life Style</h5>
                 <p class="card-text">
-                  Introducing our lifestyle workout program, designed to
-                  seamlessly integrate fitness into your daily routine,
-                  fostering long-term health and vitality. This program
-                  emphasizes functional movements, mobility exercises, and
-                  mindful practices to enhance overall well-being and
-                  resilience. From brisk walks to yoga sessions, bodyweight
-                  exercises to meditation, each workout is tailored to fit
-                  effortlessly into your busy schedule, making fitness a natural
-                  and enjoyable part of your lifestyle. Whether you're at home,
-                  at work, or on the go, our flexible approach empowers you to
-                  prioritize self-care and stay active wherever life takes you.
-                  Embrace the joy of movement, cultivate balance, and unlock the
-                  full potential of your body and mind with our lifestyle
-                  workout program. It's time to live well, move well, and thrive
-                  in every aspect of your life!
+                  It goes beyond just diet and exercise. You'll experience improved energy levels, enhance mood, greater overall satisfaction. Hello to a fulfilling life with our holistic approach!
                 </p>
-                <a href="#" class="btn btn-primary">Click Me!</a>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
               </div>
             </div>
           </div>
@@ -300,7 +288,7 @@
       </div>
     </section>
     <section id="contact">
-     <h3 class="text-center">Contact</h3>
+     <h3 class="text-center display-3">Contact</h3>
      <p class="text-center">Let's get started!</p>
      <div class="card">
       <div class="card-body">
@@ -321,7 +309,22 @@
          </form>
       </div>
      </div>
-     
+     <section id="footer">
+      <div class="mb-5 mt-5 pt-3 text-center">
+        <a href="https://www.facebook.com/tere.bear.7/">
+          <i class="bi bi-facebook text-secondary"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/terence-tagayona-455884193/?originalSubdomain=ph"
+        >
+          <i class="bi bi-linkedin text-secondary"></i
+        ></a>
+        <a href="https://www.facebook.com/tere.bear.7/">
+          <i class="bi bi-instagram text-secondary"></i>
+          <p class="text-secondary">Authored by Terence Tagayona</p></a
+        >
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
